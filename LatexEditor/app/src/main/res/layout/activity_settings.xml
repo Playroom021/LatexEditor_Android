@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary"
+            android:title="Settings"
+            app:titleTextColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compile server URL"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                android:text="Any endpoint accepting a multipart POST with a project zip. Point this at your own compile server for reliability." />
+
+            <EditText
+                android:id="@+id/inputEndpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri" />
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editor theme"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton android:id="@+id/radioLight" android:text="Light" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioDark" android:text="Dark" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:id="@+id/radioHighContrast" android:text="High contrast" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <CheckBox
+                android:id="@+id/checkWordWrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Word wrap" />
+
+            <CheckBox
+                android:id="@+id/checkLineNumbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show line numbers" />
+
+            <CheckBox
+                android:id="@+id/checkAutosave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autosave" />
+
+            <View android:layout_width="match_parent" android:layout_height="24dp" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

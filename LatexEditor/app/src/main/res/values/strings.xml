@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LaTeX Editor</string>
+    <string name="new_project">New Project</string>
+    <string name="no_projects">No projects yet. Tap + to start one.</string>
+    <string name="compile">Compile</string>
+    <string name="compiling">Compiling\u2026</string>
+    <string name="compile_success">Compiled successfully</string>
+    <string name="compile_failed">Compile failed</string>
+    <string name="editor">Editor</string>
+    <string name="preview">Preview</string>
+    <string name="errors">Errors</string>
+    <string name="files">Files</string>
+    <string name="settings">Settings</string>
+</resources>

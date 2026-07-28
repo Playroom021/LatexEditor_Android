@@ -1,0 +1,12 @@
+<resources>
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="accent">#FF6F00</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="on_surface">#212121</color>
+    <color name="error">#D32F2F</color>
+    <color name="editor_bg_light">#FFFFFF</color>
+    <color name="editor_bg_dark">#1E1E2E</color>
+    <color name="editor_bg_high_contrast">#000000</color>
+</resources>
